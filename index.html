@@ -21,7 +21,9 @@
         <nav class="navigation">
           <a href="./index.html" class="logo-link"><span class="logo-accent">Web</span>Studio</a>
           <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link current-link">Студия</a>
+            </li>
             <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
             <li class="nav-item"><a href="./" class="nav-link">Контакты</a></li>
           </ul>
@@ -52,7 +54,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- <h2>Наши преимущества</h2> -->
@@ -113,9 +115,15 @@
           <ul class="activity-list">
             <li class="activity-item">
               <img src="./img/set-according.jpg" alt="верстка по схемам" width="370" height="294" />
+              <div class="activity-wrap">
+                <p class="activity-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="activity-item">
               <img src="./img/mobile-app.jpg" alt="адаптивная верстка" width="370" height="294" />
+              <div class="activity-wrap">
+                <p class="activity-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="activity-item">
               <img
@@ -124,6 +132,9 @@
                 width="370"
                 height="294"
               />
+              <div class="activity-wrap">
+                <p class="activity-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -354,5 +365,14 @@
         </div>
       </div>
     </footer>
+    <!----------------- Модальнок окно ------------------------->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg width="14px" height="14px"><use href="./img/icons.svg#icon-close-modal"></use></svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
